@@ -8,6 +8,7 @@ contract('Flight Surety Tests', async (accounts) => {
   before('setup contract', async () => {
 
     config = await Test.Config(accounts);
+    console.log(config)
     let flightSuretyApp = await FlightSuretyApp.new(config.flightSuretyData.address);
   });
 
